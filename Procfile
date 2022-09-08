@@ -1,1 +1,1 @@
-web: gunicorn weather.wsgi --log file--
+web: python manage.py migrate && gunicorn weather.wsgi --log file--
